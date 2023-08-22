@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<body>
+     <div
+    style="
+      text-align: center;
+      border: 2px solid grey;
+      width: 40%;
+      height: 300px;
+      background-color: grey;
+      margin-left: 30%;
+      margin-top: 50px;
+    "
+  >
+    <h1>Login</h1>
+    <form onsubmit="postUserDetails(event)">
+      <div style="margin-top: 20px">
+        <label style="margin-right: 20px">Enter Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div style="margin-top: 20px">
+        <label style="margin-right: 10px">Enter Password</label>
+        <input type="text" name="password" id="password" required />
+      </div>
+      <button
+        style="margin-top: 20px; width: 100px; height: 30px; font-weight: bold"
+      >
+        Login
+      </button>
+      <div style="margin-top: 20px">
+        <a href="./signupDB.html">New User?Signup</a>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <script src="./loginDB.js">
+  </script>
+</body>

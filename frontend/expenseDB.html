@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<body>
+  <div id="overalldata">
+    <form onsubmit="postExpenses(event)">
+      <label>Choose Description</label>
+      <input id="description" type="text" name="choosedescription" required />
+      <label>Choose Category</label>
+      <input id="category" type="text" name="chooseacategory" required />
+      <label>Choose Expense Amount</label>
+      <input id="amount" type="number" name="chooseexpenseamount" required />
+      <button>Add Expense</button>
+    </form>
+    <button id="razpay" style="margin-top: 10px">Buy Premium</button>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </div>
+  <h2>Expenses</h2>
+  <ul id="listOfExpenses"></ul>
+  <div id="expensesPagination" style="text-align: center;"></div>
+  <div id="leaderBoardDetails"></div>
+  <ul id="leaderBoard"></ul>
+  <div id="pastdownloadedurls"></div>
+  <ul id="downloadedurls"></ul>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <script src="./expenseDB.js"></script>
+</body>
